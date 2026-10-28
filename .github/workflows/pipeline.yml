@@ -62,7 +62,7 @@ jobs:
         run: |
           for i in $(seq 1 40); do
             if curl --fail --silent --output /dev/null \
-              http://localhost:8081/; then
+              http://localhost:3012/; then
               echo "Aplicacao respondeu com sucesso!"
               exit 0
             fi

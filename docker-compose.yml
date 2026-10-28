@@ -3,7 +3,7 @@ services:
     build: .
     image: stelasm/mural-flask:latest
     ports:
-      - "8081:5000"
+      - "3012:5000"
     environment:
       DB_HOST: db
       DB_PORT: "3306"
