@@ -3,7 +3,7 @@ name: CI/CD com Docker Compose
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 jobs:
@@ -112,7 +112,7 @@ jobs:
             fi
 
             cd "$PROJECT_DIR"
-            git pull origin main
+            git pull origin master
 
             # Cria o .env desse projeto
             umask 077
